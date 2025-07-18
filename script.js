@@ -19,7 +19,7 @@ function getCompChoice() {
 
 
 function glow(userChoice, colour) {
-  var userChoice_div = document.getElementById(userChoice);
+  const userChoice_div = document.getElementById(userChoice);
   userChoice_div.classList.add(colour);
   setTimeout(() => {userChoice_div.classList.remove(colour);}, 300);
 }
