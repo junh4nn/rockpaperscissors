@@ -119,8 +119,9 @@ header > h1 {
 }
 
 #smiley {
-  width: 70px;
+  width: 75px;
   margin-left: 20px;
+  margin-bottom: 6px;
 }
 
 
@@ -150,3 +151,4 @@ header > h1 {
   pointer-events: none;
 
 }
+
