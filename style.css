@@ -85,6 +85,44 @@ header > h1 {
   font-size: 23px;
 }
 
+.page2 {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.page1 {
+ opacity: 1;
+ pointer-events: all;
+ transition: opacity 0.5s ease;
+}
+
+#start {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  font-size: 90px;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+#start:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+
+#smiley {
+  width: 70px;
+  margin-left: 20px;
+}
+
 
 .green-glow {
   border: 4px solid #4dcc7d;
@@ -99,4 +137,15 @@ header > h1 {
 .grey-glow {
   border: 4px solid #464647;
   box-shadow: 0 0 10px #25292b;
+}
+
+
+.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
 }

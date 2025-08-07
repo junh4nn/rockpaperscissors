@@ -10,6 +10,9 @@ const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
+const page1_div = document.querySelector(".page1");
+const page2_div = document.querySelector(".page2");
+const start_button = document.getElementById("start")
 
 
 function getCompChoice() {
@@ -67,3 +70,8 @@ rock_div.addEventListener('click', () => startGame("rock"));
 paper_div.addEventListener('click', () => startGame("paper"));
 
 scissors_div.addEventListener('click', () => startGame("scissors"));
+
+start_button.onclick = function(){
+  page1_div.classList.add("fadeOut");
+  page2_div.classList.add("fadeIn");
+}
